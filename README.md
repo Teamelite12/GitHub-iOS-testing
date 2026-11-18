@@ -2,10 +2,11 @@
 
 > **A zero-to-production curriculum for mastering the web platform, backend engineering, frontend systems, cloud delivery, security, reliability, and technical judgment.**
 
-[![Level](https://img.shields.io/badge/Level-Zero%20to%20Advanced-2563eb)](#curriculum-map)
-[![Approach](https://img.shields.io/badge/Approach-Project%20Driven-059669)](#capstone-projects)
-[![Quality](https://img.shields.io/badge/Quality-Production%20Focused-7c3aed)](#engineering-excellence-standard)
-[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.2%20AA-0f766e)](#30-accessibility)
+[![Level](https://img.shields.io/badge/Level-Zero%20to%20Advanced-4f46e5)](#curriculum-map)
+[![Approach](https://img.shields.io/badge/Approach-Project%20Driven-0891b2)](#capstone-projects)
+[![Quality](https://img.shields.io/badge/Quality-Production%20Focused-db2777)](#engineering-excellence-standard)
+[![Testing](https://img.shields.io/badge/Testing-Playwright-f59e0b)](#26-testing)
+[![Accessibility](https://img.shields.io/badge/Accessibility-WCAG%202.2%20AA-16a34a)](#30-accessibility)
 
 > [!IMPORTANT]
 > This roadmap is not a collection of fashionable tools. Every module develops a durable engineering capability and ends with a practical **mastery gate**. Build the projects, measure the results, document the trade-offs, and revisit weak foundations.
@@ -36,7 +37,7 @@ HTML & CSS → CSS Frameworks → JavaScript → Async JavaScript → Browser AP
 ```
 
 > [!NOTE]
-> This sequence follows the structure in the supplied sample. TypeScript appears after Next.js in the sample, but use basic TypeScript gradually in Node.js and React projects. Module 17 then teaches TypeScript deeply and systematically.
+> The map places the TypeScript deep dive after Next.js, but introduce basic types gradually in Node.js and React projects. Module 17 covers TypeScript in depth.
 
 ## Execution Method
 
@@ -51,8 +52,6 @@ Use the same engineering loop in every module:
 
 > [!TIP]
 > Maintain one engineering journal containing debugging notes, architecture decisions, performance measurements, accessibility findings, incident reports, and lessons from code reviews.
-
----
 
 ## Foundation · Web Platform
 
@@ -85,8 +84,6 @@ HTML5, modern CSS, Chrome or Edge DevTools, Lighthouse, axe DevTools, and Figma 
 
 Build a responsive page from a Figma design without Bootstrap or Tailwind. The page must work with keyboard navigation and remain readable on mobile, tablet, and desktop screens.
 
----
-
 ## 02. CSS Frameworks
 
 ### Learn
@@ -114,8 +111,6 @@ Tailwind CSS, shadcn/ui, Radix UI, and CSS Modules. Learn Bootstrap only well en
 ### Mastery gate
 
 Create a consistent interface without scattering arbitrary colors, spacing, and sizes throughout the project.
-
----
 
 ## 03. JavaScript
 
@@ -153,8 +148,6 @@ JavaScript, Node.js, ESLint, Prettier, and VS Code debugger.
 
 Solve small programming problems without tutorials, organize code into modules, debug with breakpoints, and explain common array and object operations.
 
----
-
 ## 04. Asynchronous JavaScript
 
 ### Learn
@@ -185,8 +178,6 @@ Implement simplified versions of `Promise.all`, `Promise.allSettled`, a retry ut
 
 Explain the event loop clearly and debug unhandled rejections, stale requests, races, and incorrectly awaited operations.
 
----
-
 ## 05. Browser APIs
 
 ### Learn
@@ -213,8 +204,6 @@ Explain the event loop clearly and debug unhandled rejections, stale requests, r
 ### Mastery gate
 
 Build an interactive browser application without React and explain event propagation, storage choices, request cancellation, and rendering bottlenecks.
-
----
 
 ## 06. Node.js and Browser Runtimes
 
@@ -246,8 +235,6 @@ Node.js LTS, `node`, `npm` or `pnpm`, `tsx`, and Node.js Inspector.
 ### Mastery gate
 
 Explain why Node.js handles I/O-heavy workloads well, when CPU-heavy work becomes a problem, and how streams avoid loading entire files into memory.
-
----
 
 ## 07. HTTP and REST
 
@@ -282,8 +269,6 @@ Write an OpenAPI contract for the server before introducing Express or NestJS.
 
 Inspect a raw HTTP request, diagnose CORS and caching problems, choose appropriate status codes, and design predictable REST endpoints.
 
----
-
 ## 08. Git and GitHub
 
 ### Learn
@@ -307,8 +292,6 @@ Manage every roadmap project through issues and pull requests. Add a README, con
 ### Mastery gate
 
 Recover from common Git mistakes, resolve conflicts safely, review a pull request, and explain merge versus rebase trade-offs.
-
----
 
 ## 09. Package Managers
 
@@ -342,8 +325,6 @@ Prefer pnpm for projects and monorepos. Understand npm and Yarn because existing
 
 Explain the lockfile, diagnose dependency conflicts, avoid unsafe lifecycle scripts, and publish a correctly versioned package.
 
----
-
 ## 10. Build Tools
 
 ### Learn
@@ -374,8 +355,6 @@ Create a small application with:
 ### Mastery gate
 
 Explain what the build tool does, diagnose a production-only build error, and identify an unnecessarily large dependency in a bundle report.
-
----
 
 ## Backend · Data
 
@@ -415,8 +394,6 @@ Rebuild one bounded module using Java, Spring Boot, Spring Security, Spring Data
 ### Mastery gate
 
 Build a documented API with clean boundaries, validation, error handling, logs, tests, and reliable startup and shutdown behavior.
-
----
 
 ## 12. Databases
 
@@ -461,8 +438,6 @@ Implement a product catalog in PostgreSQL and MongoDB, then record the access-pa
 
 Choose databases from requirements rather than fashion, write meaningful SQL, use transactions correctly, and optimize only after measuring query plans.
 
----
-
 ## 13. ORM
 
 ### Learn
@@ -494,8 +469,6 @@ Add an ORM to the task API:
 ### Mastery gate
 
 Inspect generated queries, detect N+1 behavior, write safe migrations, and know when not to force a complex query through an ORM.
-
----
 
 ## Frontend · Application Architecture
 
@@ -532,8 +505,6 @@ React, Vite, React Router, TanStack Query, React Hook Form, Zod, React Testing L
 
 Choose appropriate component boundaries, avoid unnecessary global state and effects, and diagnose extra renders using React DevTools.
 
----
-
 ## 15. State Management
 
 ### Learn
@@ -564,8 +535,6 @@ Extend the issue tracker with:
 ### Mastery gate
 
 Explain why each piece of state lives where it does and distinguish remote server state from local interface state.
-
----
 
 ## 16. Next.js
 
@@ -602,8 +571,6 @@ Next.js, React, Tailwind CSS, Vercel for quick previews, and AWS or Azure for de
 
 Justify the rendering and caching strategy of each major route and prevent server-only secrets from entering browser bundles.
 
----
-
 ## 17. TypeScript Deep Dive
 
 ### Learn
@@ -637,8 +604,6 @@ TypeScript with strict settings, `tsc`, `tsx`, Zod, and API-client generation fr
 ### Mastery gate
 
 Keep `any` out of application code, model success and error states precisely, and use advanced types only when they improve correctness and readability.
-
----
 
 ## Security · Real-Time Systems
 
@@ -676,8 +641,6 @@ Auth.js, Better Auth, Keycloak, Microsoft Entra ID, Amazon Cognito, Auth0, or Cl
 
 Explain session and token trade-offs, secure browser authentication correctly, and enforce authorization on every protected backend operation.
 
----
-
 ## 19. Security
 
 ### Learn
@@ -710,8 +673,6 @@ Conduct a security review of the full-stack application:
 ### Mastery gate
 
 Demonstrate protections against broken access control, injection, XSS, CSRF, credential leakage, and abusive request patterns.
-
----
 
 ## 20. WebSockets
 
@@ -746,8 +707,6 @@ WebSocket API, `ws` or Socket.IO, Redis, and k6 WebSocket tests.
 
 Handle reconnects, slow clients, duplicate messages, expired authentication, and multiple backend instances.
 
----
-
 ## 21. WebRTC
 
 ### Learn
@@ -781,8 +740,6 @@ Browser WebRTC APIs, a WebSocket signaling server, coturn, and LiveKit or medias
 
 Explain why signaling is separate from media, diagnose ICE failures, and explain why multi-user video usually requires an SFU.
 
----
-
 ## 22. Redis Deep Dive
 
 ### Learn
@@ -811,8 +768,6 @@ Add Redis to the primary application for:
 ### Mastery gate
 
 Design cache invalidation explicitly, handle Redis downtime safely, and avoid treating Redis as the permanent source of truth unless the use case supports it.
-
----
 
 ## 23. Queues and Pub/Sub
 
@@ -848,8 +803,6 @@ BullMQ for Redis-backed jobs, RabbitMQ for traditional messaging, Apache Kafka f
 
 Prove that duplicate delivery cannot duplicate business effects and that failed events can be inspected, retried, and replayed safely.
 
----
-
 ## 24. Bun
 
 ### Learn
@@ -871,8 +824,6 @@ Run one small API and test suite under both Bun and Node.js. Compare installatio
 ### Mastery gate
 
 Choose Bun from measured benefits and compatibility requirements, not benchmark headlines.
-
----
 
 ## 25. Turborepo and Monorepos
 
@@ -912,14 +863,15 @@ Configure cached builds, tests, linting, type checks, and affected-package CI.
 
 Run only required pipeline tasks after a change and maintain clear package ownership without circular dependencies.
 
----
-
 ## 26. Testing
 
 ### Learn
 
 - Unit, integration, component, API, contract, end-to-end, load, and security tests
 - Test pyramid and practical testing strategy
+- Browser automation with Playwright: locators, assertions, fixtures, and isolated test data
+- Cross-browser projects, responsive viewport coverage, and device emulation
+- Trace Viewer, screenshots, video, and test reports for failure diagnosis
 - Mocks, stubs, fakes, and test data factories
 - Behavior-focused assertions
 - Deterministic tests and clock control
@@ -929,7 +881,7 @@ Run only required pipeline tasks after a change and maintain clear package owner
 
 ### Tools
 
-Vitest or Jest, React Testing Library, Playwright, Supertest, MSW, JUnit 5, Mockito, Testcontainers, Pact, and k6.
+Vitest or Jest, React Testing Library, [Playwright Test](https://playwright.dev/), Supertest, MSW, JUnit 5, Mockito, Testcontainers, Pact, and k6.
 
 ### Build
 
@@ -941,14 +893,13 @@ Test the critical flow:
 - Queue-driven notification
 - Authorization failure
 - Database rollback
-- Browser end-to-end flow
+- Playwright end-to-end flow covering the critical user journey in Chromium, Firefox, and WebKit
+- Capture and inspect a Playwright trace when a browser test fails
 - Load test for the busiest API
 
 ### Mastery gate
 
 Select the correct test layer, reproduce failures consistently, remove flaky behavior, and prove fixes with regression tests.
-
----
 
 ## Delivery · Cloud · Architecture
 
@@ -962,6 +913,9 @@ Select the correct test layer, reproduce failures consistently, remove flaky beh
 - Multi-stage builds and non-root containers
 - Docker Compose
 - CI/CD principles and quality gates
+- Build once and promote the same artifact through environments
+- Supply-chain controls: dependency review, secret scanning, SBOMs, and image signing
+- Infrastructure drift, deployment approvals, and rollback strategies
 - Infrastructure as Code
 - Configuration and secret management
 - Logs, metrics, traces, and operational runbooks
@@ -969,21 +923,21 @@ Select the correct test layer, reproduce failures consistently, remove flaky beh
 ### Tools
 
 Ubuntu, Bash, Docker, Docker Compose, GitHub Actions, Terraform, OpenTelemetry, Prometheus, Grafana, and Trivy.
+Use Syft to generate an SBOM and GitHub artifact attestations to publish build provenance.
 
 ### Build
 
 - Containerize web, API, worker, PostgreSQL, and Redis services
 - Run the system with Docker Compose
 - Add health checks
-- Scan images
+- Scan images and dependencies, generate an SBOM, and publish build provenance
 - Build a pipeline for lint, type check, tests, build, scan, and image publishing
-- Provision a staging environment with Terraform
+- Provision a staging environment with Terraform and require an approval before production
+- Promote the same immutable image to staging and production, with a documented rollback
 
 ### Mastery gate
 
 Create a reproducible local and CI environment from a clean machine and diagnose container, network, configuration, and pipeline failures.
-
----
 
 ## 28. Deployment
 
@@ -1019,8 +973,6 @@ Vercel for previews, AWS or Azure for production learning, Nginx, Amazon ECS/Far
 
 Deploy without exposing every service publicly, roll back a bad release, restore application data in a practice exercise, and explain the major cost drivers.
 
----
-
 ## 29. System Design
 
 ### Learn
@@ -1055,8 +1007,6 @@ Create a design packet for the capstone containing requirements, estimates, API 
 ### Mastery gate
 
 Defend a design with quantified assumptions and clearly explain why simpler alternatives were rejected.
-
----
 
 ## Product Quality
 
@@ -1096,8 +1046,6 @@ Audit the capstone and fix:
 
 Complete critical workflows using only a keyboard and test at least one workflow with a screen reader. Automated checks alone are not sufficient.
 
----
-
 ## 31. Automation
 
 ### Learn
@@ -1134,8 +1082,6 @@ Automate:
 
 A new contributor can clone the repository, run one documented setup command, and reach a working development environment without manual hidden steps.
 
----
-
 ## 32. SEO
 
 ### Learn
@@ -1170,8 +1116,6 @@ Optimize the content or commerce project with:
 ### Mastery gate
 
 Important public pages are crawlable, provide valid structured metadata, meet realistic performance targets, and avoid duplicate-content problems.
-
----
 
 ## Advanced Topics That Complete the Stack
 
@@ -1231,8 +1175,6 @@ Learn direct model APIs, structured outputs, tool calling, embeddings, retrieval
 
 **Build:** add an evidence-grounded assistant to the capstone. Require source references, authorization checks, unsupported-answer refusal, evaluation results, and telemetry that excludes sensitive prompts.
 
----
-
 ## Career Readiness
 
 ## Interview Preparation
@@ -1278,8 +1220,6 @@ Prepare concise STAR examples for ownership, conflict, failure, debugging, quali
 - URL shortener
 - Real-time chat architecture
 - Transaction-safe wallet service
-
----
 
 ## Capstone Projects
 
@@ -1331,8 +1271,6 @@ Add a repository assistant, support classifier, semantic search, or documentatio
 
 Build a document-proof application that stores only hashes on-chain. Learn Solidity, Foundry or Hardhat, OpenZeppelin Contracts, wallet interaction, gas costs, access control, and common smart-contract vulnerabilities.
 
----
-
 ## Portfolio Review Matrix
 
 Use this matrix before presenting a project as portfolio-ready.
@@ -1350,8 +1288,6 @@ Use this matrix before presenting a project as portfolio-ready.
 | Delivery | Reproducible build, CI/CD, staged deployment, smoke tests, and rollback |
 | Operations | Logs, metrics, traces, dashboards, alerts, runbook, and incident exercise |
 | Communication | README, diagrams, ADRs, release notes, and concise demo narrative |
-
----
 
 ## Engineering Excellence Standard
 
